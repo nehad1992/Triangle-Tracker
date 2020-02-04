@@ -21,4 +21,8 @@ describe ('triangle with its prototype', () => {
     var isosTriangle = new Triangle(5,5,7)
     expect(isosTriangle.checkType()).toEqual("isosceles triangle");
   });
+  test('should correctly determine whether three lengths make an equilateral triangle', function(){
+    var eqiTriangle = new Triangle (4,4,4)
+    expect(eqiTriangle.checkType()).toEqual("equilateral triangle");
+  });
 });
