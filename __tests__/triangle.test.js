@@ -17,4 +17,8 @@ describe ('triangle with its prototype', () => {
     var scalTrinagle = new Triangle(4,5,7)
     expect(scalTrinagle.checkType()).toEqual("scalene triangle");
   });
+  test('should correctly deteremine whether three lengths make an isocleles triangle', function (){
+    var isocTriangle = new Triangle(5,5,7)
+    expect(iscoTriangle.checkType()).toEqual("isosceles triangle");
+  });
 });
