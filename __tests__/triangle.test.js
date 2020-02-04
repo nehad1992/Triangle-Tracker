@@ -13,4 +13,8 @@ describe ('triangle with its prototype', () => {
     var notTriangle = new Triangle(3,9,22);
     expect(notTriangle.checkType()).toEqual("not a triangle");
   });
+  test('should correctly determine whether three lengths make a scalene triangle', function() {
+    var scalTrinagle = new Triangle(4,5,7)
+    expect(scalTrinagle.checkType()).toEqual("scalene triangle");
+  });
 });
